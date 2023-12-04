@@ -6,8 +6,8 @@
     box-sizing: border-box;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
-    
-:root{
+
+:root {
     --moderate-violate: rgb(117, 65, 200);
     --dark-greyish-blue: rgb(72, 85, 106);
     --dark-blackish-blue: rgb(25, 33, 46);
@@ -15,5 +15,46 @@
     --light-greyish-blue: rgb(236, 242, 248);
 }
 
-    @media only screen and (min-width: 600px) {
+main{
+    background-color: var(--light-greyish-blue);
+    padding: 15px;
+  }
+
+#daniel{
+    grid-area: daniel;
+}
+
+#jonathan{
+    grid-area: jonathan;
+}
+
+#jeanette{
+    grid-area: jeanette;
+}
+
+#patrick{
+    grid-area: patrick;
+}
+
+#kira{
+    grid-area: kira;
+}
+
+@media only screen and (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+        "daniel daniel daniel daniel daniel daniel jonathan jonathan kira"
+        "jeanette jeanette patrick patrick patrick patrick patrick patrick kira"
+        ;
     }
+}
+
+/* Utitlity classes */
+.dark-blackish-blue {
+    color: var(--dark-blackish-blue);
+}
+
+.light-greyish-blue {
+    color: var(--light-greyish-blue);
+}
