@@ -15,6 +15,10 @@
     --light-greyish-blue: rgb(236, 242, 248);
 }
 
+body{
+    height: 100vh;
+}
+
 main{
     background-color: var(--light-greyish-blue);
     padding: 15px;
