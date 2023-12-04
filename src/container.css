@@ -6,7 +6,7 @@ section {
     z-index: 1;
 }
 
-#quote {
+.quote {
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -21,29 +21,29 @@ section {
     margin-bottom: 1rem;
 }
 
-#profile-pic {
+.profile-pic {
     border-radius: 50%;
     width: 35px;
     height: 35px;
     object-fit: cover;
 }
 
-#name {
+.name {
     font-size: small;
 }
 
-#title {
+.title {
     opacity: 0.5;
     font-size: smaller;
 }
 
-#heading {
+.heading {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
-#review {
+.review {
     opacity: 0.7;
 }
 
