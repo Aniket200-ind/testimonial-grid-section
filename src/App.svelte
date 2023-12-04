@@ -1,6 +1,11 @@
+<script>
+  import Container from "./lib/Container.svelte";
+  import { testimonials } from "./data";
+</script>
 <main>
-  <h1>App</h1>
-  <p>Start editing to see some magic happen :)</p>
+  {#each testimonials as testimonial}
+    <Container {testimonial} />
+  {/each}
 </main>
 
 <style>
