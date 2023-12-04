@@ -6,19 +6,19 @@
 
 <section
   style={`background-color: ${testimonial.bgColor};`}
-  id={testimonial.className}
+  class={testimonial.className}
 >
   {#if testimonial.id === 1}
-    <img src="images/bg-pattern-quotation.svg" alt="Quotes" id="quote" />
+    <img src="images/bg-pattern-quotation.svg" alt="Quotes" class="quote" />
   {/if}
   <div class="outer-div">
-    <img src={testimonial.imageUrl} alt={testimonial.name} id="profile-pic" />
-    <div id="inner-div">
+    <img src={testimonial.imageUrl} alt={testimonial.name} class="profile-pic" />
+    <div class="inner-div">
       <p
         class={testimonial.theme === "dark"
           ? "light-greyish-blue"
           : "dark-blackish-blue"}
-        id="name"
+        class="name"
       >
         {testimonial.name}
       </p>
@@ -26,7 +26,7 @@
         class={testimonial.theme === "dark"
           ? "light-greyish-blue"
           : "dark-blackish-blue"}
-        id="title"
+        class="title"
       >
         {testimonial.title}
       </p>
@@ -36,7 +36,7 @@
     class={testimonial.theme === "dark"
       ? "light-greyish-blue"
       : "dark-blackish-blue"}
-    id="heading"
+    class="heading"
   >
     {testimonial.heading}
   </p>
@@ -44,7 +44,7 @@
     class={testimonial.theme === "dark"
       ? "light-greyish-blue"
       : "dark-blackish-blue"}
-    id="review"
+    class="review"
   >
     {testimonial.review}
   </p>
