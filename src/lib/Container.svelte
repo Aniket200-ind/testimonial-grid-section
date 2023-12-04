@@ -6,7 +6,7 @@
 
 <section
   style={`background-color: ${testimonial.bgColor};`}
-  class={testimonial.className}
+  id={testimonial.idName}
 >
   {#if testimonial.id === 1}
     <img src="images/bg-pattern-quotation.svg" alt="Quotes" class="quote" />
@@ -15,36 +15,32 @@
     <img src={testimonial.imageUrl} alt={testimonial.name} class="profile-pic" />
     <div class="inner-div">
       <p
-        class={testimonial.theme === "dark"
+        class={`${testimonial.theme === "dark"
           ? "light-greyish-blue"
-          : "dark-blackish-blue"}
-        class="name"
+          : "dark-blackish-blue"} name`}
       >
         {testimonial.name}
       </p>
       <p
-        class={testimonial.theme === "dark"
-          ? "light-greyish-blue"
-          : "dark-blackish-blue"}
-        class="title"
+        class={`${testimonial.theme === "dark"
+        ? "light-greyish-blue"
+        : "dark-blackish-blue"} title`}
       >
         {testimonial.title}
       </p>
     </div>
   </div>
   <p
-    class={testimonial.theme === "dark"
-      ? "light-greyish-blue"
-      : "dark-blackish-blue"}
-    class="heading"
+    class={`${testimonial.theme === "dark"
+    ? "light-greyish-blue"
+    : "dark-blackish-blue"} heading`}
   >
     {testimonial.heading}
   </p>
   <p
-    class={testimonial.theme === "dark"
-      ? "light-greyish-blue"
-      : "dark-blackish-blue"}
-    class="review"
+    class={`${testimonial.theme === "dark"
+    ? "light-greyish-blue"
+    : "dark-blackish-blue"} review`}
   >
     {testimonial.review}
   </p>
